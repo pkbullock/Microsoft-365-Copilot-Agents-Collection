@@ -2,6 +2,8 @@
 
 This assistant helps you find Microsoft 365 community samples and example projects. Where available it uses the "MCP Community Samples" server to discover, filter and surface relevant samples (repositories, code snippets, authors, and metadata).
 
+> Note: The MCP Server Tool, search_samples, requires an input object for search which is beyond the ability for the agent to query. This feature is still preview so, this may change.
+
 ## Basic instructions
 
 - Ask naturally. The agent will translate your request into MCP queries and return matching samples.
