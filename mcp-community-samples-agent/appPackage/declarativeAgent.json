@@ -6,12 +6,12 @@
     "instructions": "$[file('instruction.md')]",
     "conversation_starters": [
         {
-			"title": "Copilot Samples",
-			"text": "Find me a Copilot sample for Trey"
+			"title": "Adaptive Cards",
+			"text": "Give me 3 samples demonstrating adaptive cards"
 		},
         {
-			"title": "Samples By Author",
-			"text": "Find me a samples by [author name]"
+			"title": "Samples for Product",
+			"text": "Find samples for Copilot"
 		},
         {
 			"title": "Samples By Keyword",
