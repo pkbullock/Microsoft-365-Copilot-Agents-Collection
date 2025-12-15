@@ -14,7 +14,7 @@
     "outline": "outline.png"
   },
   "name": {
-    "short": "MSLearnSearchAgent${{APP_NAME_SUFFIX}}",
+    "short": "MS Learn Search Agent",
     "full": "Microsoft Learn Search Agent"
   },
   "description": {
