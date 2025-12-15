@@ -14,12 +14,12 @@
     "outline": "outline.png"
   },
   "name": {
-    "short": "MicrosoftLearnSearchAgent${{APP_NAME_SUFFIX}}",
-    "full": "Full name for Microsoft Learn Search Agent"
+    "short": "MSLearnSearchAgent${{APP_NAME_SUFFIX}}",
+    "full": "Microsoft Learn Search Agent"
   },
   "description": {
-    "short": "Short description for Microsoft Learn Search Agent",
-    "full": "Full description for Microsoft Learn Search Agent"
+    "short": "Agent for searching Microsoft Learn content",
+    "full": "An agent that helps users search and retrieve content from Microsoft Learn."
   },
   "accentColor": "#FFFFFF",
   "composeExtensions": [],
