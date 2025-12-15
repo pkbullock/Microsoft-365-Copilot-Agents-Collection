@@ -9,6 +9,17 @@
             "discourage_model_knowledge": true
         }
     },
+    "capabilities": [
+        {
+            "name": "CodeInterpreter"
+        },
+        {
+            "name":"GraphicArt"
+        }
+    ],
+    "disclaimer": {
+        "text": "This declarative agent and its samples are provided as is without warranty of any kind, either express or implied, including any implied warranties of fitness for a particular purpose, merchantability, or non-infringement."
+    },
     "conversation_starters": [
         {
 			"title": "Microsoft 365 Agents",
