@@ -7,7 +7,7 @@ Refer to blog post https://pkbullock.com/blog/2026/exploring-new-cowork-agent
 
 Here are all the tools I have available, grouped by area:
 
-Microsoft 365 — Email (Outlook)
+### Microsoft 365 — Email (Outlook)
 ListMessages, GetMessage, SearchM365 — read/search
 SendEmailWithAttachments, ReplyToMessage, ReplyAllToMessage, ReplyWithFullThread, ReplyAllWithFullThread, ForwardMessage, ForwardMessageWithFullThread
 CreateDraftMessage, UpdateDraft, SendDraftMessage, AddDraftAttachments
@@ -16,12 +16,15 @@ MoveMessage, DeleteMessage, UpdateMessage, FlagEmail
 ListMailFolders, GetMailFolder, CreateMailFolder
 ListMailRules, CreateMailRule, UpdateMailRule, DeleteMailRule
 GetAutoReplySettings, SetAutoReply, DisableAutoReply
-Microsoft 365 — Calendar
+
+### Microsoft 365 — Calendar
 ListEvents, ListCalendarView, FindMeetingTimes
 CreateEvent, UpdateEvent, DeleteEventById, CancelEvent
 AcceptEvent, DeclineEvent, TentativelyAcceptEvent, ForwardEvent
 GetRooms, GetUserDateAndTimeZoneSettings
-Microsoft 365 — Teams
+
+### Microsoft 365 — Teams
+
 ListTeams, GetTeam, ListChannels, GetChannel
 CreateChannel, CreatePrivateChannel, UpdateChannel
 ListChannelMembers, AddChannelMember, UpdateChannelMember
@@ -30,29 +33,36 @@ ListChats, GetChat, CreateChat, UpdateChat
 ListChatMembers, AddChatMember
 ListChatMessages, GetChatMessage, PostMessage, UpdateChatMessage, DeleteChatMessage
 GetMyRecentTranscripts, ListMeetingTranscripts, GetMeetingTranscript
-Microsoft 365 — Files (SharePoint / OneDrive)
+
+### Microsoft 365 — Files (SharePoint / OneDrive)
 GetSite, SearchSites, ListSubsites
 GetDefaultDrive, ListDrives, SearchDrive
 GetDriveChildren, GetDriveItem, ReadFileContent, CreateFolder
 ListLists, ListListColumns, ListListItems
-Microsoft 365 — People
+
+### Microsoft 365 — People
 GetMyDetails, GetUserDetails, GetMultipleUsersDetails
 SearchPeople, GetManagerDetails, GetDirectReportsDetails
-Microsoft 365 — General
+
+### Microsoft 365 — General
 SearchM365 (unified search across files, email, Teams, calendar, Power BI)
 QueryGraph, CallGraph (raw Graph API access)
-Workspace & Files
+
+### Workspace & Files
 Read, Write, Edit, NotebookEdit
 Glob, Grep, Bash
-Web & Visuals
+
+### Web & Visuals
 web_search, web_fetch, search_images
-render_ui (Adaptive Cards)
-Tasks & Planning
+ render_ui (Adaptive Cards)
+
+### Tasks & Planning
 TaskCreate, TaskUpdate, TaskGet, TaskList, TaskOutput, TaskStop
 AskUserQuestion, EnterPlanMode, ExitPlanMode
 EnterWorktree, ExitWorktree
 Skill (invoke skills), Agent (delegate to subagents)
-Scheduled Tasks
+
+### Scheduled Tasks
 SetupScheduledPrompt, GetScheduledPrompts, EditScheduledPrompt, DeleteScheduledPrompt
 
 *Supplied by Skills Management*
