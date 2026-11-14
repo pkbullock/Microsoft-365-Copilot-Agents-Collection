@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: mail
+kind: IQCapability
+capability: mail
+access: Write

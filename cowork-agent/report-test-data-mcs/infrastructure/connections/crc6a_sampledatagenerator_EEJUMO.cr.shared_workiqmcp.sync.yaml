@@ -1,0 +1,3 @@
+connectionReferences:
+  - connectionReferenceLogicalName: crc6a_sampledatagenerator_EEJUMO.cr.shared_workiqmcp
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_workiqmcp

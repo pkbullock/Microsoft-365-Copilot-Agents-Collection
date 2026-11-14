@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: files
+kind: IQCapability
+capability: files
+access: Write

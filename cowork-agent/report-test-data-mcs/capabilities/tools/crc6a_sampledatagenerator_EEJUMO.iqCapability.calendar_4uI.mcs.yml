@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: calendar
+kind: IQCapability
+capability: calendar
+access: Write

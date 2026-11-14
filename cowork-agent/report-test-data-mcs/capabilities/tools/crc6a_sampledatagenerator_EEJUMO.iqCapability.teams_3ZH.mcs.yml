@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: teams
+kind: IQCapability
+capability: teams
+access: Write

@@ -1,0 +1,49 @@
+displayName: Sample Data Generator
+schemaName: crc6a_sampledatagenerator_EEJUMO
+accessControlPolicy: ChatbotReaders
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  channels:
+    - id: Microsoft365Copilot
+      channelId: Microsoft365Copilot
+
+  settings:
+    WorkIqAddedByDefault: true
+    WorkIqPreviewWorkloadsEnabled: true
+
+  isAgentConnectable: true
+  publishOnCreate: false
+  publishOnImport: true
+  isLightweightBot: false
+  aISettings:
+    contentModeration: Medium
+
+  recognizer:
+    kind: CLICopilotRecognizer
+
+  agentSettings:
+    model:
+      series: Auto
+
+    instructions:
+      segments:
+        - kind: StaticSegment
+          value: |-
+            You are an agent that will generate test data, specifically test data should be about products. I shall return the following results for the products:
+            ‌
+            - Product ID
+            - Name
+            - Description
+            - Stock level
+            - Stock location
+
+            Amount of data should be limited to 20 items.
+
+    web:
+      enableWebSearch: false
+
+  deferredProvisioning: false
+
+template: cliagent-1.0.0
+language: 1033

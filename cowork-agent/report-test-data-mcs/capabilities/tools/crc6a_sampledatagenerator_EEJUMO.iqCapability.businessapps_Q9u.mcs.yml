@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: businessapps
+kind: IQCapability
+capability: businessapps
+access: Write

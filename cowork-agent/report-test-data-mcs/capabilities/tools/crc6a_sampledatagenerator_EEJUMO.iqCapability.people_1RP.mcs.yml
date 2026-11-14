@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: people
+kind: IQCapability
+capability: people
+access: Write

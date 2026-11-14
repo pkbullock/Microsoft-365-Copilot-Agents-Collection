@@ -1,0 +1,5 @@
+mcs.metadata:
+  componentName: sites
+kind: IQCapability
+capability: sites
+access: Write
