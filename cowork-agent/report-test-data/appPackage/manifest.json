@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "${{TEAMS_APP_VERSION}}",
+  "id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "Paul Bullock",
+    "websiteUrl": "https://pkbullock.com/community-terms",
+    "privacyUrl": "https://pkbullock.com/community-terms",
+    "termsOfUseUrl": "https://pkbullock.com/community-terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "report-test-data${{APP_NAME_SUFFIX}}",
+    "full": "Test Data Reports"
+  },
+  "description": {
+    "short": "Generate synthetic data and table reports with original output and trace logs.",
+    "full": "Generate synthetic reporting data using the Sample Data Generator MCP server. Create simple table-based reports with the original MCP output and available server and client execution trace logs appended for transparency."
+  },
+  "accentColor": "#FFFFFF",
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [],
+  "agentSkills": [
+    {
+      "folder": "skills/test-data-report"
+    }
+  ],
+  "agentConnectors": [
+    {
+      "id": "sample-data-generator",
+      "displayName": "Sample Data Generator",
+      "description": "Generate synthetic test data for table-based reports using the Copilot Studio sample data generator.",
+      "toolSource": {
+        "remoteMcpServer": {
+          "mcpServerUrl": "https://api.powerplatform.com/copilotstudio-mcp/tenants/cb056806-0ed1-4a92-afd6-647acd53627c/environments/2f52624c-13db-eb80-b0fb-699c8d4f5410/agents/crc6a_sampledatagenerator_EEJUMO",
+          "authorization": {
+            "type": "OAuthPluginVault",
+            "referenceId": "Y2IwNTY4MDYtMGVkMS00YTkyLWFmZDYtNjQ3YWNkNTM2MjdjIyM2MGY2YzRiYi0xNTgyLTRiNWUtODhjOS1lODMxNDMzNWI0MTA="
+          }
+        }
+      }
+    }
+  ]
+}
