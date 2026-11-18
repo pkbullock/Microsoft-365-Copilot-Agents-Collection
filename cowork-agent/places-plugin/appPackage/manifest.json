@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "Paul Bullock",
+    "websiteUrl": "https://pkbullock.com/community-terms",
+    "privacyUrl": "https://pkbullock.com/community-terms",
+    "termsOfUseUrl": "https://pkbullock.com/community-terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Places Report${{APP_NAME_SUFFIX}}",
+    "full": "Places Report"
+  },
+  "description": {
+    "short": "Markdown reports of places to visit near you.",
+    "full": "Generates a markdown table of recommended places to visit near your location using the Places To Visit Copilot Studio agent, including trace details of the agent interaction."
+  },
+  "accentColor": "#FFFFFF",
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [],
+  "agentConnectors": [
+    {
+      "id": "places-to-visit",
+      "displayName": "Places To Visit",
+      "description": "Copilot Studio agent 'Places To Visit' that recommends places to visit near a given location.",
+      "toolSource": {
+        "remoteMcpServer": {
+          "mcpServerUrl": "https://api.powerplatform.com/copilotstudio-mcp/tenants/cb056806-0ed1-4a92-afd6-647acd53627c/environments/2f52624c-13db-eb80-b0fb-699c8d4f5410/agents/Default_Places_To_Visit_2151de",
+          "authorization": {
+            "type": "OAuthPluginVault",
+            "referenceId": "Y2IwNTY4MDYtMGVkMS00YTkyLWFmZDYtNjQ3YWNkNTM2MjdjIyMxNDIyYTQzZS1lOTc1LTQ5NzMtYTM5MC0zMmZkY2I2NmE1NjA="
+          }
+        }
+      }
+    }
+  ],
+  "agentSkills": [
+    {
+      "folder": "skills/places-report"
+    }
+  ]
+}
